@@ -5,6 +5,7 @@
 # Nuxt build
 .nuxt
 node_modules
+.DS_Store
 # Nuxt generate
 dist
 
