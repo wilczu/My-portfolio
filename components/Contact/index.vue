@@ -7,7 +7,7 @@
 
         <socialMedia class="py-6" />
 
-        <article class="text-white text-center container mx-auto w-1/2">
+        <article class="text-white text-center container mx-auto w-full md:w-2/3 lg:w-1/2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur expedita illum reprehenderit, 
             voluptatibus quaerat delectus, incidunt repellat labore rem iure maxime molestias eveniet, fugit 
             obcaecati error consequatur doloribus dolorem?
