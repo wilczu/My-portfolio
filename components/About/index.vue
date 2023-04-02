@@ -13,7 +13,7 @@
                 <div class="col-span-4 md:col-span-1 relative">
                     <div class="absolute bg-pink-600 rounded-lg top-0 left-0 w-4/5 h-4/5 z-10"></div>
                     <img 
-                        src="https://media.licdn.com/dms/image/C4D03AQFIPo07g074bw/profile-displayphoto-shrink_800_800/0/1645010672296?e=1686182400&v=beta&t=_Ksrn5zJpKFnpiTZ3PDJd68UaNFl6Ii6zZ72oPRa1xY"
+                        src="https://res.cloudinary.com/dqswntnlm/image/upload/v1680476518/wilchu/wilczupl1_rvw83c.jpg"
                         width="500"
                         height="350"
                         class="w-[800px] h-[350px] object-cover border-l-[22px] border-t-[22px] border-transparent z-20 relative"
