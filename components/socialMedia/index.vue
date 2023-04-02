@@ -1,0 +1,45 @@
+<template>
+    <div>
+        <div class="flex gap-4 justify-center" :class="[ position == 'row' ? 'flex-row' : 'flex-col w-fit' ]">
+            <div v-for="platform in socialPlatforms" :key="platform.id" class="bg-gray-700 hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white p-4 rounded-full">
+                <i :class="[platform.icon, 'fa-lg px-[2px]']"></i>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            socialPlatforms: [
+                {
+                    id: 1,
+                    name: 'Twitter',
+                    icon: 'fa-brands fa-twitter',
+                    link: 'https://twitter.com'
+                },
+                {
+                    id: 2,
+                    name: 'Reddit',
+                    icon: 'fa-brands fa-reddit',
+                    link: 'https://reddit.com'
+                },
+                {
+                    id: 3,
+                    name: 'Github',
+                    icon: 'fa-brands fa-github',
+                    link: 'https://github.com'
+                }
+            ]
+        }
+    },
+    props: {
+        position: {
+            required: false,
+            type: String,
+            default: 'row'
+        }
+    }
+}
+</script>
