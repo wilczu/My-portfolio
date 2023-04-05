@@ -16,7 +16,7 @@
 
         <div class="bg-black opacity-0 group-hover:opacity-75 absolute top-0 transition-all duration-300 w-full h-full">
             <div class="flex items-center justify-center">
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-30">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-30 text-center">
 
                     <header class="text-center text-4xl mb-3">
                         {{ project.name }}
@@ -27,7 +27,12 @@
                     </article>
 
                     <section class="mt-4 text-right">
-                        <span v-for="(tech, index) in project.techStack" :key="'stack' + index" class="text-pink-600 px-2">{{ tech }}</span>
+                        <span 
+                            v-for="(tech, index) in project.techStack" 
+                            :key="'stack' + index" 
+                            class="text-pink-600"
+                            :class="index != Object.keys(project.techStack).length - 1 ? 'px-2' : 'pl-2'"
+                        >{{ tech }}</span>
                     </section>
 
                     <section>
