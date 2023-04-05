@@ -1,8 +1,13 @@
 <template>
     <div>
         <div class="flex gap-4 justify-center" :class="[ position == 'row' ? 'flex-row' : 'flex-col w-fit' ]">
-            <div v-for="platform in socialPlatforms" :key="platform.id" class="bg-gray-700 hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white p-4 rounded-full">
-                <i :class="[platform.icon, 'fa-lg px-[2px]']"></i>
+            <div 
+                v-for="platform in socialPlatforms" 
+                :key="platform.id" 
+                class="bg-gray-700 hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white rounded-full"
+                :class="[size == 'medium' ? 'p-4' : 'p-2']"
+            >
+                <i :class="[platform.icon, size == 'medium' ? 'fa-lg px-[2px]' : 'fa-sm px-[3px]']"></i>
             </div>
         </div>
     </div>
@@ -39,6 +44,11 @@ export default {
             required: false,
             type: String,
             default: 'row'
+        },
+        size: {
+            required: false,
+            type: String,
+            default: 'medium'
         }
     }
 }
