@@ -8,7 +8,7 @@
             </h1>
         </header>
 
-        <section class="mt-6 container mx-auto w-full md:w-2/3 lg:w-1/2">
+        <section class="mt-6 container mx-auto w-fit">
 
             <ol class="relative border-l border-pink-600 pb-7" v-for="company in experience" :key="'year' + company.name">                  
                 <li class="ml-6">            
