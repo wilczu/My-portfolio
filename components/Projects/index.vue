@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="container mx-auto" id="projects">
         <header>
             <h1 class="text-5xl text-white text-center">
                 <span class="text-pink-600">02.</span>

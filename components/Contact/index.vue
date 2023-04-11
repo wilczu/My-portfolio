@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="contact">
         <h1 class="text-5xl text-white text-center">
             <span class="text-pink-600">04.</span>
             Contact

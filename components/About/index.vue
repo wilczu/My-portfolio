@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center mx-auto container">
+    <div class="text-center mx-auto container" id="about">
         <div>
             <h1 class="text-5xl text-white text-center">
                 <span class="text-pink-600">01.</span>
