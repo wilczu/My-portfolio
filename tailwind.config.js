@@ -35,6 +35,8 @@ module.exports = {
         "slideBottomIn": "slide-bottom-in 0.5s ease-in",
       },
       screens: {
+        extraTiny: '320px',
+        xs: '467px',
         sm: '600px',
         md: '728px',
         lg: '984px',
