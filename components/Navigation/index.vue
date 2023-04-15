@@ -79,11 +79,20 @@ export default {
     },
     methods: {
         toggleNavigation() {
-            console.log('Toggle navigation!');
             this.mobileNavigation = !this.mobileNavigation;
-
             document.querySelector('body').classList.toggle('overflow-hidden');
+        },
+        resizeMenuOption(e) {
+            if(e.target.innerWidth > 727 && this.mobileNavigation) {
+                this.toggleNavigation();
+            }
         }
-    }
+    },
+    created() {
+        window.addEventListener("resize", this.resizeMenuOption);
+    },
+    destroyed() {
+        window.removeEventListener("resize", this.resizeMenuOption);
+    },
 }
 </script>
