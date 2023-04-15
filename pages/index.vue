@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <main class="bg-gray-800 px-8 md:px-16">
       <Navigation/>
       <Hero />
