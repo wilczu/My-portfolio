@@ -4,8 +4,8 @@
             <div 
                 v-for="platform in socialPlatforms" 
                 :key="platform.id" 
-                class="bg-gray-700 hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white rounded-full"
-                :class="[size == 'medium' ? 'p-4' : 'p-2']"
+                class="hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white rounded-full"
+                :class="[background, size == 'medium' ? 'p-4' : 'p-2']"
             >
                 <i :class="[platform.icon, size == 'medium' ? 'fa-lg px-[2px]' : 'fa-sm px-[3px]']"></i>
             </div>
@@ -49,6 +49,11 @@ export default {
             required: false,
             type: String,
             default: 'medium'
+        },
+        background: {
+            required: false,
+            type: String,
+            default: 'bg-gray-700'
         }
     }
 }
