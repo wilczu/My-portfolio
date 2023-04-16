@@ -6,6 +6,9 @@
         <a v-else-if="type == 'mail'" :href="`mailto:` + link">
             {{ name }}
         </a>
+        <p v-else>
+            {{ name }}
+        </p>
     </div>
 </template>
 
@@ -14,7 +17,7 @@ export default {
     props: {
         name: {
             type: String,
-            required: true,
+            required: false,
             default: "Button"
         },
         link: {
