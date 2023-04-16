@@ -36,10 +36,15 @@
                         </section>
 
                         <section>
-                            <div class="flex gap-4 py-4 justify-end">
-                                <div v-for="(link, index) in project.links" :key="'link' + index">
+                            <div class="flex gap-4 py-4 justify-end" v-for="(link, index) in project.links" :key="'link' + index">
+                                <div v-if="link.website">
                                     <a :href="link.website" class="text-white hover:text-pink-600 cursor-pointer translate-all duration-300">
                                         <i class="fa-solid fa-square-up-right fa-2xl"></i>
+                                    </a>
+                                </div>
+                                <div v-if="link.github">
+                                    <a :href="link.github" class="text-white hover:text-pink-600 cursor-pointer translate-all duration-300">
+                                        <i class="fa-brands fa-github fa-2xl"></i>
                                     </a>
                                 </div>
                             </div>
