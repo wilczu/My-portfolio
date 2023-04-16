@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <main class="bg-gray-800 px-8 md:px-16">
+    <main class="px-8 md:px-16">
       <Navigation/>
       <Hero />
       <About class="py-16" />
