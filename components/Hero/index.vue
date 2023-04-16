@@ -10,9 +10,12 @@
         <h3 class="text-3xl mt-2">I'm a web developer</h3>
 
         <article class="mt-2">
-            My focus is on creating visually appealing, user-friendly websites that provide a <br />
-            seamless user experience. I use my expertise in HTML, CSS, JavaScript, and other <br />
-            relevant technologies to develop responsive and mobile-friendly interfaces <br />
+            
+            My primary objective is to design websites with user-friendly interfaces, visually attractive <br />
+            designs, and seamless user experiences. To achieve this, I apply my comprehensive knowledge <br />
+            of an array of technologies such as HTML, CSS, JavaScript, and other relevant tools. <br />
+            I specialize in the creation of responsive and mobile-friendly user interfaces that cater <br />
+            to the needs of modern-day users.
         </article>
 
 
