@@ -15,7 +15,7 @@
                     <span class="absolute flex items-center justify-center w-6 h-6 bg-pink-600 rounded-full -left-3"></span>
                     <h3 class="flex items-center mb-1 text-lg font-semibold text-white">{{ company.name }}</h3>
                     <span class="block mb-2 text-sm font-normal leading-none text-pink-600">
-                        {{ company.time }} {{ company.year }}
+                        {{ company.time }}
                     </span>
 
                     <ul v-for="description, index in company.content" class="list-disc ml-6" :key="company.name + 'desc' + index">
@@ -37,22 +37,34 @@ export default {
             experience: [
                 {
                     name: "Uncover commerce",
-                    year: '2023',
-                    time: 'Jan - Nov',
+                    time: 'May 2022 - Present',
                     content: [
-                        "test value 1",
-                        "test value 2",
-                        "test value 3"
+                        "Creating e-commerce stores in Shopify",
+                        "Providing customer support",
+                        "Creating custom solutions with Vue.js for Shopify stores"
                     ]
                 },
                 {
                     name: "CMD + Shift",
-                    year: '2023',
-                    time: 'Jan - Nov',
+                    time: 'Jun 2021 - Feb 2022',
                     content: [
-                        "test value 1",
-                        "test value 2",
-                        "test value 3"
+                        "Designing and prototyping websites in Adobe XD",
+                        "Creating single page application using Nuxt.js and Vue frameworks",
+                        "Styling websites using TailwindCSS",
+                        "Creating basic API's using Express.js and Node",
+                        "Creating data-flow charts and storyboards for API behaviors"
+                    ]
+                },
+                {
+                    name: "Phl",
+                    time: 'Jan 2021 - Jun 2021',
+                    content: [
+                        "Creating and managing e-commerce website",
+                        "Data integration between systems",
+                        "Consulting and collaborating with graphics designer",
+                        "Deploying website and handling SEO",
+                        "Creating scripts to automate tasks",
+                        "Colaborating with external company/developers"
                     ]
                 }
             ]
