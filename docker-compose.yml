@@ -1,7 +1,6 @@
 version: '3'
 services:
-  main_website:
-    container_name: production
+  portfolio:
     build:
       context: .
       dockerfile: Dockerfile
