@@ -7,7 +7,9 @@
                 class="hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white rounded-full"
                 :class="[background, size == 'medium' ? 'p-4' : 'p-2']"
             >
-                <i :class="[platform.icon, size == 'medium' ? 'fa-lg px-[2px]' : 'fa-sm px-[3px]']"></i>
+                <a :href="platform.link">
+                    <i :class="[platform.icon, size == 'medium' ? 'fa-lg px-[2px]' : 'fa-sm px-[3px]']"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -22,19 +24,19 @@ export default {
                     id: 1,
                     name: 'Twitter',
                     icon: 'fa-brands fa-twitter',
-                    link: 'https://twitter.com'
+                    link: 'https://twitter.com/Wilchudev'
                 },
                 {
                     id: 2,
-                    name: 'Reddit',
-                    icon: 'fa-brands fa-reddit',
-                    link: 'https://reddit.com'
+                    name: 'Linked in',
+                    icon: 'fa-brands fa-linkedin-in',
+                    link: 'https://www.linkedin.com/in/kacper-soja/'
                 },
                 {
                     id: 3,
                     name: 'Github',
                     icon: 'fa-brands fa-github',
-                    link: 'https://github.com'
+                    link: 'https://github.com/wilczu'
                 }
             ]
         }
