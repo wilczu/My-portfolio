@@ -32,33 +32,34 @@ export default {
                         height: 500,
                         alt: 'MusicWolf website image'
                     },
-                    shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut id praesentium omnis fugit tempore ad doloremque dolor totam non est exercitationem quod quas laboriosam earum',
+                    shortDescription: 'MusicWolf is a place of variety of different music from artists all over the world. The website features dynamic content that is served from a robust backend written in Django and Rest API. To ensure seamless deployment and efficient management, the platform is deployed using docker compose as a service, which incorporates a database, proxy, and frontend.',
                     links: [
                         {
                             website: 'https://musicwolf.net'
                         }
                     ],
                     techStack: [
-                        'Nuxt', 'Tailwindcss', 'Django', 'PostgreSQL', 'Docker'
+                        'Nuxt.js', 'Tailwindcss', 'Django', 'PostgreSQL', 'Docker', 'Docker-compose'
                     ]
                 },
                 {
                     id: 2,
-                    name: 'Phl Energy',
+                    name: 'Kipo counter',
                     image: {
-                        src: 'https://res.cloudinary.com/dqswntnlm/image/upload/v1680645549/wilchu/MusicWolf/image_h9von4.png',
+                        src: 'https://res.cloudinary.com/dqswntnlm/image/upload/v1681652305/wilchu/Kipo%20counter/image_1_hi1yjk.png',
                         width: 500,
                         height: 500,
-                        alt: 'MusicWolf website image'
+                        alt: 'Kipo counter website image'
                     },
-                    shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut id praesentium omnis fugit tempore ad doloremque dolor totam non est exercitationem quod quas laboriosam earum',
+                    shortDescription: "Counter is calculating the amount of time which has passed since release of season 1,2 or 3 of Kipo and the age of Wonderbeasts series. This single page application utilizes Wordtime API to ensure precise time calculations based on the user's specific timezone.",
                     links: [
                         {
-                            website: 'https://musicwolf.net'
+                            website: 'https://kipo.wilchu.net',
+                            github: 'https://github.com/wilczu/kipoCounter',
                         }
                     ],
                     techStack: [
-                        'Nuxt', 'Tailwindcss', 'Django', 'PostgreSQL', 'Docker'
+                        'Vue.js', 'Axios', 'Vuex', 'Vue-toaster', 'TailwindCSS', 'Docker', 'Docker-compose'
                     ]
                 }
             ]
