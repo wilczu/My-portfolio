@@ -1,69 +1,33 @@
-# portfolio
 
-## Build Setup
+# Hi, I'm Kacper! 👋
+
+### A little bit about myself.
+I'm a web developer who's absolutely passionate about creating amazing websites. I'm a bit of a perfectionist when it comes to design, so I always make sure that every pixel is in its right place. As a front-end developer, I place a lot of emphasis on creating a great user experience. After all, that's what really matters to the people who use the sites I build! 
+
+# My portfolio
+Welcome to my portfolio repository! Here, you'll find a collection of my work and experience, all presented in a fun and casual way. I used Nuxt.js and TailwindCss to create this portfolio, which showcases my skills and projects.
+
+
+## Deployment
+
+You can easily run it in docker compose:
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+  docker-compose up
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+Or with npm
 
-## Special Directories
+```bash
+  npm install
+  npm run dev
+```
+## Feedback / Contact
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+Feel free to give me any feedback or contact me on: contact@wilchu.net
 
 
-### `pages`
+## Issues
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+Feel free to open an issue with any bugs :)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
