@@ -8,9 +8,9 @@
         <socialMedia class="py-6" />
 
         <article class="text-white text-center container mx-auto w-full md:w-2/3 lg:w-1/2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur expedita illum reprehenderit, 
-            voluptatibus quaerat delectus, incidunt repellat labore rem iure maxime molestias eveniet, fugit 
-            obcaecati error consequatur doloribus dolorem?
+            Hey there! If you want to connect, feel free to drop me a message on my social media platforms
+            or shoot me an email. While I'm not actively seeking job opportunities at the moment, I'd love to
+            chat and hear more about your experiences. Don't hesitate to say hello!
         </article>
 
         <section class="py-6">
