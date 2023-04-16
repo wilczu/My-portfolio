@@ -56,7 +56,7 @@
                 {{ project.shortDescription }}
             </article>
 
-            <section class="text-center grid grid-cols-2 extraTiny:grid-cols-3 mt-4 xs:flex gap-4 gap-y-0">
+            <section class="text-center flex flex-wrap gap-4 gap-y-0">
                 <div 
                     v-for="(tech, index) in project.techStack" 
                     :key="'stack' + index" 
@@ -65,7 +65,7 @@
             </section>
 
             <section>
-                <div class="text-center grid grid-cols-2 extraTiny:grid-cols-3 mt-4 xs:flex gap-4 gap-y-0">
+                <div class="text-center mt-4 flex flex-wrap gap-4 gap-y-0">
                     <div v-for="(link, index) in project.links" :key="'link' + index">
                         <a :href="link.website" class="text-white hover:text-pink-600 cursor-pointer translate-all duration-300">
                             <i class="fa-solid fa-square-up-right fa-2xl"></i>
