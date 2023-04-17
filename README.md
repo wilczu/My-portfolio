@@ -24,7 +24,7 @@ Or with npm
 ```
 ## Feedback / Contact
 
-Feel free to give me any feedback or contact me on: contact@wilchu.net
+Feel free to give me any feedback or contact me on: hello@wilchu.dev
 
 
 ## Issues
