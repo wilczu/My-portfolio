@@ -54,7 +54,7 @@ export default {
                     shortDescription: "Counter is calculating the amount of time which has passed since release of season 1,2 or 3 of Kipo and the age of Wonderbeasts series. This single page application utilizes Wordtime API to ensure precise time calculations based on the user's specific timezone.",
                     links: [
                         {
-                            website: 'https://kipo.wilchu.net',
+                            website: 'https://kipo.wilchu.dev',
                             github: 'https://github.com/wilczu/kipoCounter',
                         }
                     ],
