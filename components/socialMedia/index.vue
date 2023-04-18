@@ -1,16 +1,16 @@
 <template>
     <div>
         <div class="flex gap-4 justify-center" :class="[ position == 'row' ? 'flex-row' : 'flex-col w-fit' ]">
-            <div 
-                v-for="platform in socialPlatforms" 
-                :key="platform.id" 
-                class="hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white rounded-full"
-                :class="[background, size == 'medium' ? 'p-4' : 'p-2']"
-            >
-                <a :href="platform.link">
-                    <i :class="[platform.icon, size == 'medium' ? 'fa-lg px-[2px]' : 'fa-sm px-[3px]']"></i>
-                </a>
-            </div>
+
+            <a v-for="platform in socialPlatforms" :key="platform.id" :href="platform.link">
+                <div 
+                    class="hover:bg-pink-600 transition-all duration-300 cursor-pointer text-white rounded-full"
+                    :class="[background, size == 'medium' ? 'p-4' : 'p-2']"
+                >
+                <i :class="[platform.icon, size == 'medium' ? 'fa-lg px-[2px]' : 'fa-sm px-[3px]']"></i>
+                </div>
+            </a>
+
         </div>
     </div>
 </template>
