@@ -6,15 +6,15 @@
                 :src="project.image.src" 
                 :width="project.image.width"
                 :height="project.image.height"
-                class="object-cover object-top rounded-t-md md:rounded-md w-full h-full border-b-[18px] z-0 border-pink-600 md:group-hover:border-b-0 transition-all duration-300"
+                class="object-cover object-top rounded-t-md lg:rounded-md w-full h-full border-b-[18px] z-0 border-pink-600 lg:group-hover:border-b-0 transition-all duration-300"
                 :alt="project.image.alt"
             />
 
-            <div class="bg-pink-600 rounded-t-md text-center opacity-100 md:group-hover:opacity-0 transition-all duration-300 absolute bottom-0 left-1/2 transform -translate-x-1/2 py-4 px-12">
+            <div class="bg-pink-600 rounded-t-md text-center opacity-100 lg:group-hover:opacity-0 transition-all duration-300 absolute bottom-0 left-1/2 transform -translate-x-1/2 py-4 px-12">
                 <h3 class="text-white">{{ project.name }}</h3>
             </div>
 
-            <div class="bg-black opacity-0 hidden md:block group-hover:opacity-75 absolute top-0 transition-all duration-300 w-full h-full">
+            <div class="bg-black opacity-0 hidden lg:block group-hover:opacity-75 absolute top-0 transition-all duration-300 w-full h-full">
                 <div class="flex items-center justify-center">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-30 text-center">
 
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div class="bg-pink-600 block md:hidden text-white p-4 rounded-b-md">
+        <div class="bg-pink-600 block lg:hidden text-white p-4 rounded-b-md">
             
             <article>
                 {{ project.shortDescription }}
