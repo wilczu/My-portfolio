@@ -1,10 +1,10 @@
 <template>
     <div class="bg-pink-600 hover:bg-gray-700 transition-all duration-300 rounded-md text-white py-2 px-4 w-fit mx-auto">
         <a v-if="type == 'link'" :href="link">
-            {{ name }}
+            <p>{{ name }}</p>
         </a>
         <a v-else-if="type == 'mail'" :href="`mailto:` + link">
-            {{ name }}
+            <p>{{ name }}</p>
         </a>
         <p v-else>
             {{ name }}

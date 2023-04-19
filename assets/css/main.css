@@ -20,4 +20,11 @@
     .devicon i {
         font-size: 30px;
     }
+    p, span {
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+    }
+    h1, h2, h3 {
+        font-family: 'Montserrat', sans-serif;
+    }
 }

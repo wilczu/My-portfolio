@@ -19,20 +19,30 @@
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-30 text-center">
 
                         <header class="text-center text-4xl mb-3">
-                            {{ project.name }}
+                            <h2>{{ project.name }}</h2>
                         </header>
 
                         <article>
-                            {{ project.shortDescription }}
+                            <p>
+                                {{ project.shortDescription }}
+                            </p>
                         </article>
 
-                        <section class="mt-4 text-right">
-                            <span 
+                        <!-- <section class="mt-4 text-right">
+                            <p 
                                 v-for="(tech, index) in project.techStack" 
                                 :key="'stack' + index" 
                                 class="text-pink-600"
                                 :class="index != Object.keys(project.techStack).length - 1 ? 'px-2' : 'pl-2'"
-                            >{{ tech }}</span>
+                            >{{ tech }}</p>
+                        </section> -->
+
+                        <section class="text-center flex flex-wrap gap-4 gap-y-0 justify-end">
+                            <div 
+                                v-for="(tech, index) in project.techStack" 
+                                :key="'stack' + index" 
+                                class="text-pink-600 flex-shrink break-all rounded-md py-2"
+                            ><p>{{ tech }}</p></div>
                         </section>
 
                         <section>
@@ -58,7 +68,9 @@
         <div class="bg-pink-600 block lg:hidden text-white p-4 rounded-b-md">
             
             <article>
-                {{ project.shortDescription }}
+                <p>
+                    {{ project.shortDescription }}
+                </p>
             </article>
 
             <section class="text-center flex flex-wrap gap-4 gap-y-0">
@@ -66,7 +78,7 @@
                     v-for="(tech, index) in project.techStack" 
                     :key="'stack' + index" 
                     class="text-gray-700 flex-shrink break-all rounded-md py-2"
-                >{{ tech }}</div>
+                ><p>{{ tech }}</p></div>
             </section>
 
             <section>

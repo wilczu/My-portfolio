@@ -15,12 +15,12 @@
                     <span class="absolute flex items-center justify-center w-6 h-6 bg-pink-600 rounded-full -left-3"></span>
                     <h3 class="flex items-center mb-1 text-lg font-semibold text-white">{{ company.name }}</h3>
                     <span class="block mb-2 text-sm font-normal leading-none text-pink-600">
-                        {{ company.time }}
+                        <p>{{ company.time }}</p>
                     </span>
 
                     <ul v-for="description, index in company.content" class="list-disc ml-6" :key="company.name + 'desc' + index">
                         <li class="mb-1 text-base font-normal text-gray-500">
-                            {{ description }}
+                            <p>{{ description }}</p>
                         </li>
                     </ul>
                 </li>

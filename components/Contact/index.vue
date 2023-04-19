@@ -8,9 +8,11 @@
         <socialMedia class="py-6" />
 
         <article class="text-white text-center container mx-auto w-full md:w-2/3 lg:w-1/2">
-            Hey there! If you want to connect, feel free to drop me a message on my social media platforms
-            or shoot me an email. While I'm not actively seeking job opportunities at the moment, I'd love to
-            chat and hear more about your experiences. Don't hesitate to say hello!
+            <p>
+                Hey there! If you want to connect, feel free to drop me a message on my social media platforms
+                or shoot me an email. While I'm not actively seeking job opportunities at the moment, I'd love to
+                chat and hear more about your experiences. Don't hesitate to say hello!
+            </p>
         </article>
 
         <section class="py-6">
