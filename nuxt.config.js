@@ -48,7 +48,17 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     ['vue-scrollto/nuxt', { duration: 600 }],
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    families: {
+      Roboto: [400],
+      Montserrat: {
+        wght: [400],
+      },
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
