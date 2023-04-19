@@ -19,7 +19,8 @@ export default {
       { name: 'keywords', content: 'wilchu, kacper soja, kacper, soja, web developer, frontend developer, wilchu github' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'https://res.cloudinary.com/dqswntnlm/image/upload/v1681669396/wilchu/favicon_gxlkb1.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'https://res.cloudinary.com/dqswntnlm/image/upload/v1681669396/wilchu/favicon_gxlkb1.ico' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css' }
     ],
     script: [
       {

@@ -45,9 +45,9 @@
                     </header>
 
                     <section>
-                        <div class="flex flex-wrap gap-4">
-                            <Badge v-for="language in techStack" :key="language.id" class="group-hover relative">
-                                <img :src="language.icon" class="w-100 h-8" />
+                        <div class="flex flex-wrap items-center gap-4">
+                            <Badge v-for="language in techStack" :key="language.id" class="group-hover relative devicon">
+                                <i :class="language.icon"></i>
                             </Badge>
                         </div>
                     </section>
@@ -67,69 +67,74 @@ export default {
             techStack: [
                 {
                     id: 1,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+                    icon: 'devicon-vuejs-plain',
                     name: 'Vue'
                 },
                 {
                     id: 2,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
+                    icon: 'devicon-nuxtjs-plain',
                     name: 'Nuxt'
                 },
                 {
                     id: 3,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+                    icon: 'devicon-css3-plain',
                     name: 'Css'
                 },
                 {
                     id: 4,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+                    icon: 'devicon-tailwindcss-plain',
                     name: 'Tailwindcss'
                 },
                 {
                     id: 5,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+                    icon: 'devicon-html5-plain',
                     name: 'Html'
                 },
                 {
                     id: 6,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
+                    icon: 'devicon-django-plain',
                     name: 'Django'
                 },
                 {
                     id: 7,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg',
-                    name: 'Bitbucket'
+                    icon: 'devicon-github-original',
+                    name: 'Github'
                 },
                 {
                     id: 8,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+                    icon: 'devicon-docker-plain',
                     name: 'Docker'
                 },
                 {
                     id: 9,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+                    icon: 'devicon-javascript-plain',
                     name: 'JavaScript'
                 },
                 {
                     id: 10,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
+                    icon: 'devicon-jira-plain',
                     name: 'Jira'
                 },
                 {
                     id: 11,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
+                    icon: 'devicon-nginx-original',
                     name: 'Nginx'
                 },
                 {
                     id: 12,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
+                    icon: 'devicon-npm-original-wordmark',
                     name: 'Npm'
                 },
                 {
                     id: 13,
-                    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+                    icon: 'devicon-postgresql-plain',
                     name: 'Postgresql'
-                }
+                },
+                {
+                    id: 14,
+                    icon: 'devicon-git-plain',
+                    name: 'Git'
+                },
             ]
         }
     }
