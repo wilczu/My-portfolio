@@ -4,10 +4,10 @@
         <!-- === [ DESKTOP MENU ] === -->
         <div class="hidden md:flex gap-4 justify-center xs:justify-end">
             <div v-for="element in navigation" :key="element.id" class="cursor-pointer group">
-                <a href="#" v-scroll-to="{ el: element.link, offset: -30 }" >
+                <div @click="scrollToElement(element.link)">
                     <span class="text-pink-600 group-hover:text-white duration-300">{{ element.id }}</span>
                     <span class="text-white group-hover:text-pink-600 duration-300">{{ element.name }}</span>
-                </a>
+                </div>
             </div>
         </div>
 
@@ -29,12 +29,10 @@
 
                     <section class="grid gap-y-4 px-6 py-6">
                         <div v-for="element in navigation" :key="element.id" class="cursor-pointer group">
-                            <a href="#" v-scroll-to="{ el: element.link, offset: -30, onStart: function(element) {
-                                toggleNavigation();
-                            }, }" >
+                            <div @click="scrollToElement(element.link)">
                                 <span class="text-pink-600 group-hover:text-white duration-300">{{ element.id }}</span>
                                 <span class="text-white group-hover:text-pink-600 duration-300">{{ element.name }}</span>
-                            </a>
+                            </div>
                             <hr class="border border-pink-600 mt-4">
                         </div>
                     </section>
@@ -56,28 +54,34 @@ export default {
                 {
                     id: '01',
                     name: 'About',
-                    link: '#about'
+                    link: 'about'
                 },
                 {
                     id: '02',
                     name: 'Projects',
-                    link: '#projects'
+                    link: 'projects'
                 },
                 {
                     id: '03',
                     name: 'Experience',
-                    link: '#experience'
+                    link: 'experience'
                 },
                 {
                     id: '04',
                     name: 'Contact',
-                    link: '#contact'
+                    link: 'contact'
                 }
             ],
             mobileNavigation: false,
         }
     },
     methods: {
+        scrollToElement(element){
+            console.log(document.getElementById(element));
+            this.mobileNavigation = false;
+            document.querySelector('body').classList.remove('overflow-hidden');
+            document.getElementById(element).scrollIntoView({ behavior: "smooth"});
+        },
         toggleNavigation() {
             this.mobileNavigation = !this.mobileNavigation;
             document.querySelector('body').classList.toggle('overflow-hidden');
@@ -87,12 +91,6 @@ export default {
                 this.toggleNavigation();
             }
         }
-    },
-    created() {
-        window.addEventListener("resize", this.resizeMenuOption);
-    },
-    destroyed() {
-        window.removeEventListener("resize", this.resizeMenuOption);
     },
 }
 </script>
