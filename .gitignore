@@ -8,6 +8,7 @@ node_modules
 .DS_Store
 # Nuxt generate
 dist
+.output
 
 ### Vue ###
 # gitignore template for Vue.js projects
