@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center mx-auto container" id="about">
+    <div class="text-center mx-auto container py-16" id="about">
         <div>
             <h1 class="text-5xl text-white text-center">
                 <span class="text-pink-600">01.</span>
@@ -45,7 +45,7 @@
                     </article>
 
                     <header>
-                        <p class="text-pink-600 my-2 text-lg">Technologies, libraries and tools I'm using:</p>
+                        <p class="text-pink-600 mb-2 mt-8 text-lg">Technologies, libraries and tools I'm using:</p>
                     </header>
 
                     <section>
