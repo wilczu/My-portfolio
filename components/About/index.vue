@@ -139,6 +139,11 @@ export default {
                     icon: 'devicon-git-plain',
                     name: 'Git'
                 },
+                {
+                    id: 15,
+                    icon: 'fa-brands fa-shopify',
+                    name: 'Shopify'
+                }
             ]
         }
     }
