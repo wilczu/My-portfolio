@@ -48,11 +48,16 @@
                         <p class="text-pink-600 mb-2 mt-8 text-lg">Technologies, libraries and tools I'm using:</p>
                     </header>
 
-                    <section>
+                    <section class="relative">
                         <div class="flex flex-wrap items-center gap-4">
-                            <Badge v-for="language in techStack" :key="language.id" class="group-hover relative devicon">
-                                <i :class="language.icon"></i>
-                            </Badge>
+                            <div v-for="language in techStack" :key="language.id">
+                                <Badge class="group-hover relative devicon mx-auto w-full rounded-t-md text-center">
+                                    <i :class="language.icon"></i>
+                                </Badge>
+                                <div class="bg-pink-600 px-4 py-2 rounded-b-md text-white">
+                                    {{ language.name }}
+                                </div>
+                            </div>
                         </div>
                     </section>
 
