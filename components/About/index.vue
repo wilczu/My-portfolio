@@ -11,7 +11,7 @@
             <div class="grid grid-cols-4 gap-12">
 
                 <div class="col-span-4 md:col-span-1 relative">
-                    <div class="absolute bg-pink-600 rounded-lg top-0 left-0 w-4/5 h-4/5 z-10"></div>
+                    <div class="absolute bg-pink-600 rounded-lg top-0 left-0 w-4/5 h-4/5 md:h-2/6 lg:h-3/6 xl:h-3/5 z-10"></div>
                     <img 
                         src="https://res.cloudinary.com/dqswntnlm/image/upload/v1680476518/wilchu/wilczupl1_rvw83c.jpg"
                         width="500"
