@@ -11,12 +11,12 @@
             <div class="grid grid-cols-4 gap-12">
 
                 <div class="col-span-4 md:col-span-1 relative">
-                    <div class="absolute bg-pink-600 rounded-lg top-0 left-0 w-4/5 h-4/5 md:h-2/6 lg:h-3/6 xl:h-3/5 z-10"></div>
-                    <img 
-                        src="https://res.cloudinary.com/dqswntnlm/image/upload/v1680476518/wilchu/wilczupl1_rvw83c.jpg"
-                        width="500"
-                        height="350"
-                        class="w-[800px] h-[350px] object-cover border-l-[22px] border-t-[22px] border-transparent z-20 relative"
+                    <div class="absolute bg-pink-600 rounded-lg top-0 left-0 w-4/5 h-4/5 md:h-2/5 lg:h-[320px] xl:h-3/5 z-10"></div>
+                    <nuxt-img
+                        provider="cloudinary"
+                        src="v1680476518/wilchu/wilczupl1_rvw83c.jpg"
+                        sizes="sm:100vw md:350px lg:450px"
+                        class="object-cover border-l-[22px] w-full md:h-1/2 lg:h-[320px] border-t-[22px] border-transparent z-20 relative"
                     />
                 </div>
 
