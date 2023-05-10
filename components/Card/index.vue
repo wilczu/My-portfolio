@@ -2,12 +2,13 @@
 
     <div>
         <div class="w-full h-[400px] relative group">
-            <img 
+            <nuxt-img
+                provider="cloudinary"
                 :src="project.image.src" 
                 :width="project.image.width"
-                :height="project.image.height"
+                format="webp"
+                sizes="sm:100vw md:630px lg:1400px"
                 class="object-cover object-top rounded-t-md lg:rounded-md w-full h-full border-b-[18px] z-0 border-pink-600 lg:group-hover:border-b-0 transition-all duration-300"
-                :alt="project.image.alt"
             />
 
             <div class="bg-pink-600 rounded-t-md text-center opacity-100 lg:group-hover:opacity-0 transition-all duration-300 absolute bottom-0 left-1/2 transform -translate-x-1/2 py-4 px-12">
@@ -27,15 +28,6 @@
                                 {{ project.shortDescription }}
                             </p>
                         </article>
-
-                        <!-- <section class="mt-4 text-right">
-                            <p 
-                                v-for="(tech, index) in project.techStack" 
-                                :key="'stack' + index" 
-                                class="text-pink-600"
-                                :class="index != Object.keys(project.techStack).length - 1 ? 'px-2' : 'pl-2'"
-                            >{{ tech }}</p>
-                        </section> -->
 
                         <section class="text-center flex flex-wrap gap-4 gap-y-0 justify-end">
                             <div 

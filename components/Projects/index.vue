@@ -27,7 +27,7 @@ export default {
                     id: 1,
                     name: 'MusicWolf',
                     image: {
-                        src: 'https://res.cloudinary.com/dqswntnlm/image/upload/v1680645549/wilchu/MusicWolf/image_h9von4.png',
+                        src: '/v1683754399/wilchu/MusicWolf/MusicWolf_1_egmonc.png',
                         width: 500,
                         height: 500,
                         alt: 'MusicWolf website image'
@@ -46,7 +46,7 @@ export default {
                     id: 2,
                     name: 'Kipo counter',
                     image: {
-                        src: 'https://res.cloudinary.com/dqswntnlm/image/upload/v1681652305/wilchu/Kipo%20counter/image_1_hi1yjk.png',
+                        src: '/v1683756918/wilchu/Kipo%20counter/Kipo_counter_1_w3qsyj.png',
                         width: 500,
                         height: 500,
                         alt: 'Kipo counter website image'
