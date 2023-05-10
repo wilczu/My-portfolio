@@ -1,12 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge',],
   postcss: {
       plugins: {
         tailwindcss: {},
         autoprefixer: {},
       },
+  },
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dqswntnlm/image/upload/'
+    }
   },
   app: {
     head: {
