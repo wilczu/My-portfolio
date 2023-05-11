@@ -7,10 +7,10 @@
                 :src="project.image.src" 
                 :width="project.image.width"
                 format="webp"
-                sizes="sm:100vw md:630px lg:1400px"
+                sizes="600px md:630px lg:2000px"
                 class="object-cover object-top rounded-t-md lg:rounded-md w-full h-full border-b-[18px] z-0 border-pink-600 lg:group-hover:border-b-0 transition-all duration-300"
             />
-
+            
             <div class="bg-pink-600 rounded-t-md text-center opacity-100 lg:group-hover:opacity-0 transition-all duration-300 absolute bottom-0 left-1/2 transform -translate-x-1/2 py-4 px-12">
                 <h3 class="text-white">{{ project.name }}</h3>
             </div>
