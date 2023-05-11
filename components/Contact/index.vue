@@ -15,7 +15,7 @@
             </p>
         </article>
 
-        <section class="py-6">
+        <section class="py-6 text-center">
             <Button type="mail" name="Contact me" link="hello@wilchu.dev" />
         </section>
 
